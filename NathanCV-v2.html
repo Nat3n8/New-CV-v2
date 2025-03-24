@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wicked-styles.css">
+    <title>Nathan M. CV</title>
+</head>
+<body>
+    <main class="main-container">
+        <nav class="nav-container">
+            <a href="#home" id="home">Home</a>
+            <a href="#projects" id="project">Projects</a>
+            <a href="#contactform" id="contact">Contact</a>
+        </nav>
+
+        <header class="header-container">
+            <img src="imgs/nate.png" alt="Picture of yours truly" id="selfie">
+            <ul>
+                <li>
+                    <h1>Nathan McMillan</h1>
+                </li>
+                <li>
+                    <span><img src="imgs/pin_drop.png" alt="Pin" id="pin_drop"><p>Port St. Lucie, Florida</p></span>
+                </li>
+                <li>
+                    <span>Freelance Frontend Web Developer</span>
+                </li>
+            </ul>
+        </header>
+
+        <div class="content" id="p1">
+                <h2>Specialization</h2>
+
+                <ul class="stack-container">
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-plain-wordmark.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" /></li>
+                </ul>
+        </div>
+
+        <div class="content" id="p2">
+                <h2>Relevant Experience</h2>
+                <p>I've coded a number of projects ranging from simple single-page websites to fully-fledged practical web applications.</p>
+        </div>
+
+        <div class="content" id="p3">
+
+                <h2>Projects</h2>
+
+                <div class="project-section-container">
+
+                    <div class="project-container-actual">
+                        <img src="imgs/proj1.jpg" alt="Project 1">
+                        <span>Project 1</span>
+                    </div>
+
+                    <div class="project-container-actual">
+                        <img src="imgs/proj2.webp" alt="Project 2">
+                        <span>Project 2</span>
+                    </div>
+
+                    <div class="project-container-actual">
+                        <img src="imgs/proj3.png" alt="Project 3">
+                        <span>Project 3</span>
+                    </div>
+
+                    <div class="project-container-actual">
+                        <img src="imgs/proj4.jpg" alt="Project 4">
+                        <span>Project 4</span>
+                    </div>
+
+                </div>
+        </div>
+
+        <div class="content" id="p4">
+                <h2>Focus</h2>
+                <p>My focus is on building out evermore interesting and creative websites and applications for clients and consumers while using the most current and cutting edge technologies available.</p>
+        </div>
+
+        <div class="content" id="p5">
+                <h2>Contact Me</h2>
+
+                <form action="contact" id="contact-form">
+                    <table>
+                        <tr>
+                            <!-- <th scope="row">Name:</th> -->
+                            <td><input type="text" name="name" id="name" required placeholder="Name"></td>
+                        </tr>
+
+                        <tr>
+                            <!-- <th scope="row">Email:</th> -->
+                            <td><input type="email" name="email" id="email" required placeholder="Email"></td>
+                        </tr>
+
+                        <tr>
+                            <!-- <th scope="row">Phone:</th> -->
+                            <td><input type="text" name="phone" id="phone" required placeholder="Phone"></td>
+                        </tr>
+
+                        <tr>
+                            <!-- <th scope="row">Reason for contact:</th> -->
+                            <td><textarea name="reason" id="reason" required placeholder="Reason for contact"></textarea></td>
+                        </tr>
+
+                    </table>
+                    
+                    <div class="formbtn-container">
+                        <button type="reset" id="btn" class="clearbtn">Clear Form</button>
+                        <button type="submit" id="btn" class="submitbtn">Send</button>
+                    </div>
+                </form>
+        </div>
+    </main>
+</body>
+</html>

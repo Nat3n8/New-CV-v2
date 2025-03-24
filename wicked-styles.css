@@ -1,0 +1,247 @@
+body {
+    /* background-color: rgb(31, 31, 31); */
+    background: linear-gradient(-45deg, #b10000, #00abb1, #009821);
+    background-size: 600% 600%;
+    animation: gradient 25s ease infinite;
+    color: rgb(211, 211, 211);
+    font-family: Ubuntu;
+    margin-bottom: 50px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* --MAIN CONTENT-- */
+.main-container {
+    width: 1500px;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "header header header"
+    "spec proj proj"
+    "relw foc cont";
+    grid-template-rows: auto 600px 300px 300px;
+    gap: 10px 10px;
+}
+
+#p1 {
+    grid-area: spec;
+}
+
+#p3 {
+    grid-area: proj;
+}
+
+#p2 {
+    grid-area: relw;
+}
+
+#p4 {
+    grid-area: foc;
+}
+
+#p5 {
+    grid-area: cont;
+}
+
+.content{
+    /* border: 2px solid gray; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    background-color: rgba(66, 66, 66, 0.589);
+}
+
+.content h2{
+    /* padding: 0px 100px; */
+    text-align: center;
+}
+
+/* ---NAV BAR--- */
+.nav-container {
+    /* display: flex;
+    justify-content: space-around; */
+    /* justify-self: center; */
+    grid-area: navbar;
+    width: 600px;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-self: center;
+    text-align: center;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    border-radius: 25px;
+    border: 2px solid rgba(66, 66, 66, 0);
+    padding: 7px;
+    transition: 0.75s;
+}
+
+.nav-container a:hover {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 0px;
+    box-shadow: 0px 0px 25px rgb(211, 211, 211);
+    padding: 7px;
+    transition: 0.2s;
+}
+
+/* ---HEADER CARD--- */
+#selfie {
+    height: 250px;
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+
+h1 {
+    height: 40px;
+    margin: 0px;
+}
+
+#pin_drop, p{
+    display: inline-block;
+}
+
+#pin_drop {
+    height: 30px;
+}
+
+.header-container {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 50px;
+    padding: 150px;
+    min-width: 784px; */
+}
+
+.header-container ul {
+    list-style: none;
+}
+
+.header-container p{
+    margin: 10px 0px;
+}
+/* ---SECONDARY CONTENT--- */
+
+.stack-container {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    gap: 5px 5px;
+    justify-self: center;
+}
+
+#p1 ul {
+    padding: 0px;
+}
+
+.stack-container img{
+    width: 50px;
+    height: 50px;
+}
+
+#p2 p, #p4 p{
+    margin: 10px 100px;
+}
+
+.formbtn-container {
+    text-align: center;
+}
+
+.clearbtn, .submitbtn {
+    width: 86.5px;
+    height: 30px;
+    font-family: Ubuntu;
+    text-decoration: none;
+    background-color: rgba(66, 66, 66, 0);
+    color: rgb(211, 211, 211);
+    border-radius: 25px;
+    border: 2px solid rgba(66, 66, 66, 0);
+    padding: 7px;
+    transition: 0.75s;
+}
+
+.submitbtn:hover {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 0px;
+    box-shadow: 0px 0px 25px rgb(211, 211, 211);
+    padding: 7px;
+    transition: 0.2s;
+}
+
+.clearbtn:hover {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 0px;
+    box-shadow: 0px 0px 25px rgb(255, 0, 0);
+    padding: 7px;
+    transition: 0.2s;
+}
+
+textarea {
+    width: 250px;
+    height: 75px;
+}
+
+input {
+    height: 25px;
+    width: 250px;
+}
+
+textarea::placeholder, input::placeholder{
+    font-family: Ubuntu;
+    color: rgb(211, 211, 211);
+}
+
+textarea, input {
+    background-color: rgba(66, 66, 66, 0.5);
+    border: none;
+    color: rgb(211, 211, 211);
+    font-family: Ubuntu;
+}
+
+table {
+    justify-self: center;
+}
+
+.project-container-actual img{
+    width: 230px;
+    height: 166px;
+    border-radius: 10px;
+}
+
+.project-container-actual {
+    text-align: center;
+}
+
+.project-container-actual span {
+    font-size: 1.5rem;
+}
+
+.project-section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-basis: content;
+    /* flex-wrap: wrap; */
+}
